@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sooryaraj S - Full Stack Software Developer & Visual Designer. Specialized in enterprise web solutions, AI-powered applications, and modern digital design.">
+    <title>SOORYARAJ S | Full Stack & Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="hero-animation.js" defer></script>
+</head>
+<body>
+    <!-- Loading Screen / Intro Animation -->
+    <div class="loader" id="loader">
+        <div class="loader-container">
+            <div class="loader-text">
+                <span class="loader-label">Loading...</span>
+                <div class="bouncing-dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <span class="logo-text">SOORYARAJ S<span class="logo-dot">.</span></span>
+                </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="gradient-blob blob-1"></div>
+            <div class="gradient-blob blob-2"></div>
+            <div class="gradient-blob blob-3"></div>
+        </div>
+
+        <div class="hero-container">
+            <!-- Left Side: Intro Text -->
+            <div class="hero-left">
+                <div class="hero-greeting">
+                    <p class="greeting-small">Hello,</p>
+                    <h1 class="greeting-name">This is <span class="name-highlight">Sooryaraj S</span>,</h1>
+                    <p class="greeting-title">
+                        I'm a Professional 
+                        <span class="typing-text">
+                            <span class="typing-cursor">|</span>
+                        </span>
+                    </p>
+                </div>
+
+                <p class="hero-description">
+                    Full Stack Developer specializing in building scalable web applications with React, Node.js, and MongoDB. Passionate about creating elegant solutions to complex problems.
+                </p>
+
+                <div class="hero-social">
+                    <a href="https://github.com/Sooryaraj-S" target="_blank" class="social-icon" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-icon" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-icon" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+
+                <div class="hero-buttons-group">
+                    <a href="#contact" class="btn btn-contact">
+                        <span>Contact Me</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1p-rlDiFPXLZMclcose59dvlwrrV1F3A6/view?usp=drive_link" class="btn btn-resume">
+                        <span>Get Resume</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side: Code Editor Card -->
+            <div class="hero-right">
+                <div class="code-editor">
+                    <div class="editor-header">
+                        <div class="editor-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <p class="editor-filename">developer.js</p>
+                    </div>
+                    <div class="editor-body">
+                        <pre class="code-content"><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  <span class="property">Name</span>: <span class="string">"Sooryaraj S"</span>,
+  <span class="property">skills</span>: [
+    <span class="string">"React"</span>,
+    <span class="string">"Node.js"</span>,
+    <span class="string">"MongoDB"</span>,
+    <span class="string">"Express"</span>,
+    <span class="string">"JavaScript"</span>
+  ],
+  <span class="property">hardWorker</span>: <span class="boolean">true</span>,
+  <span class="property">quickLearner</span>: <span class="boolean">true</span>,
+  <span class="property">problemSolver</span>: <span class="boolean">true</span>,
+  <span class="property">hireable</span>() {
+    <span class="keyword">return</span> (
+      <span class="variable">this</span>.<span class="property">hardWorker</span> &&
+      <span class="variable">this</span>.<span class="property">problemSolver</span> &&
+      <span class="variable">this</span>.<span class="property">skills</span>.<span class="property">length</span> >= <span class="number">4</span>
+    );
+  }
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Profile</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card glass-effect">
+                        <h3>Professional Background</h3>
+                        <p>B.Sc. Computer Science graduate from Dr. SNS Rajalakshmi College of Arts and Science. Specialized in Full Stack Software Development with expertise in enterprise-grade web solutions. Proven track record in delivering scalable, high-performance applications that drive business value.</p>
+                    </div>
+                    <div class="about-card glass-effect">
+                        <h3>Core Competencies</h3>
+                        <p>Expert in full-stack development using React.js, Node.js, and MongoDB. Proficient in building AI-powered applications, responsive web design, and enterprise solutions. Strong background in visual design and creative direction. Delivering solutions that combine technical excellence with exceptional user experience.</p>
+                    </div>
+                    <div class="about-card glass-effect">
+                        <h3>Professional Commitment</h3>
+                        <p>Dedicated to delivering enterprise-quality solutions with clean architecture and optimal performance. Committed to continuous professional development and staying at the forefront of emerging technologies. Focused on creating solutions that exceed client expectations and drive measurable business outcomes.</p>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card glass-effect">
+                        <h4>10+</h4>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-card glass-effect">
+                        <h4>5+</h4>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="stat-card glass-effect">
+                        <h4>2+</h4>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-card glass-effect">
+                        <h4>100%</h4>
+                        <p>Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category glass-effect">
+                    <div class="skill-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                    </div>
+                </div>
+
+                <!-- Frameworks & Libraries -->
+                <div class="skill-category glass-effect">
+                    <div class="skill-header">
+                        <i class="fas fa-cube"></i>
+                        <h3>Frameworks & Libraries</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">C++ STL</span>
+                        <span class="skill-tag">TailwindCSS</span>
+                        <span class="skill-tag">Bootstrap</span>
+                    </div>
+                </div>
+
+                <!-- Databases & Cloud -->
+                <div class="skill-category glass-effect">
+                    <div class="skill-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Databases & Cloud</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Vercel</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Technologies -->
+                <div class="skill-category glass-effect">
+                    <div class="skill-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Technologies</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Figma</span>
+                    </div>
+                </div>
+
+                <!-- Creative Skills -->
+                <div class="skill-category glass-effect">
+                    <div class="skill-header">
+                        <i class="fas fa-palette"></i>
+                        <h3>Creative Skills</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span class="skill-tag">Wildlife Photography</span>
+                        <span class="skill-tag">Video Editing</span>
+                        <span class="skill-tag">Photo Editing</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">Graphic Design</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-category glass-effect">
+                    <div class="skill-header">
+                        <i class="fas fa-star"></i>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Self-Learning</span>
+                        <span class="skill-tag">Adaptability</span>
+                        <span class="skill-tag">Leadership</span>
+                        <span class="skill-tag">Team Collaboration</span>
+                        <span class="skill-tag">Communication</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-effect">
+                    <div class="project-image">
+                        <img src="image/AI POWERED RESUME AND PORTFOLIO 1.png" alt="AI Resume Builder">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Sooryaraj-S/Resume-Bulider" class="project-btn" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-btn" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI-Powered Resume & Portfolio Builder</h3>
+                        <p>Intelligent web application that generates ATS-optimized resumes and responsive portfolio websites using AI-assisted content generation. Features smart template selection, real-time preview, multiple export formats (PDF, DOCX, HTML), and automatic content suggestions based on user skills and job roles.</p>
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>JavaScript</span>
+                            <span>CSS3</span>
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>MongoDB</span>
+                            <span>AI APIs</span>
+                            <span>PDF Generation</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience & Roles</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="experience-timeline">
+                <!-- Experience Item 1 -->
+                <div class="experience-item glass-effect">
+                    <div class="experience-header">
+                        <h3>Full Stack Developer Intern</h3>
+                        <span class="experience-company">EDU TANTR Online</span>
+                        <span class="experience-date">Apr – Jun 2025</span>
+                    </div>
+                    <div class="experience-content">
+                        <ul>
+                            <li>Worked on real-world full-stack development tasks</li>
+                            <li>Developed responsive UI components and integrated APIs</li>
+                            <li>Debugged and optimized application performance</li>
+                            <li>Collaborated in a professional team environment</li>
+                            <li>Implemented modern web development best practices</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="experience-item glass-effect">
+                    <div class="experience-header">
+                        <h3>NSS Volunteer & Event Coordinator</h3>
+                        <span class="experience-company">National Service Scheme (NSS)</span>
+                        <span class="experience-date">2023 – Present</span>
+                    </div>
+                    <div class="experience-content">
+                        <ul>
+                            <li>Organized and coordinated department-level technical competitions</li>
+                            <li>Led team initiatives for community development</li>
+                            <li>Developed leadership and organizational skills</li>
+                            <li>Promoted technical awareness among students</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="experience-item glass-effect">
+                    <div class="experience-header">
+                        <h3>Freelance Web Developer</h3>
+                        <span class="experience-company">Self-Employed</span>
+                        <span class="experience-date">2023 – Present</span>
+                    </div>
+                    <div class="experience-content">
+                        <ul>
+                            <li>Developed custom websites and web applications</li>
+                            <li>Delivered responsive, user-friendly designs</li>
+                            <li>Managed client relationships and project timelines</li>
+                            <li>Built AI-powered tools and applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Services</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card glass-effect">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Enterprise Web Development</h3>
+                    <p>Full-stack solutions architected for scalability and performance. Built with React.js, Node.js, and MongoDB for mission-critical applications that drive business growth.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card glass-effect">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Web Design</h3>
+                    <p>Enterprise-grade responsive websites optimized for all platforms and devices. Focused on delivering exceptional user experience and measurable conversion rates.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card glass-effect">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Professional Portfolio Solutions</h3>
+                    <p>Custom portfolio and resume platforms with advanced features, SEO optimization, and ATS-friendly design. Tailored to showcase professional achievements effectively.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card glass-effect">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI-Integrated Solutions</h3>
+                    <p>Next-generation web applications powered by AI and machine learning. Delivering innovative solutions that enhance functionality and provide competitive advantage.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card glass-effect">
+                    <div class="service-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Professional Visual Content</h3>
+                    <p>High-quality photography and visual design services for corporate projects, events, and branding. Professional editing and presentation standards.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card glass-effect">
+                    <div class="service-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>Video & Media Production</h3>
+                    <p>Professional video and multimedia editing services. Delivering high-quality visual content with cinematic production standards for corporate and brand applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Available for internships & freelance projects. Let's create something amazing together!</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card glass-effect">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <a href="mailto:sooryaraj.dev@gmail.com">sooryaraj.dev@gmail.com</a>
+                    </div>
+
+                    <div class="info-card glass-effect">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <a href="tel:+919345379563">+91-9345379563</a>
+                    </div>
+
+                    <div class="info-card glass-effect">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>Coimbatore,India</p>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/Sooryaraj-S" target="_blank" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="linkedin.com/in/sooryaraj-s" target="_blank" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/mine._.vivid/" target="_blank" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://x.com/Sooryarajdev" target="_blank" class="social-link" title="X">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form glass-effect" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Web3Forms Configuration -->
+                    <input type="hidden" name="access_key" value="638df532-5b30-4999-afc5-f62ce520136e">
+                    <input type="hidden" name="subject" value="New Contact Message from Portfolio">
+                    <input type="hidden" name="redirect" value="https://sooryaraj.dev#contact">
+                    
+                    <div class="form-group">
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name"
+                            placeholder="Your Name" 
+                            required
+                            class="form-input"
+                        >
+                        <span class="form-error" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email"
+                            placeholder="Your Email" 
+                            required
+                            class="form-input"
+                        >
+                        <span class="form-error" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input 
+                            type="text" 
+                            id="subject" 
+                            name="subject" 
+                            placeholder="Subject" 
+                            required
+                            class="form-input"
+                        >
+                        <span class="form-error" id="subjectError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea 
+                            id="message" 
+                            name="message"
+                            placeholder="Your Message" 
+                            rows="6"
+                            required
+                            class="form-input"
+                        ></textarea>
+                        <span class="form-error" id="messageError"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <span class="form-success" id="formSuccess"></span>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sooryaraj S</h4>
+                    <p>Full Stack Developer & Visual Creator
+                    </p>
+                    <p>Photography</p>
+                    <p>Videography</p>
+                    <p>Photo & Video Editor</p><p>Freelancer</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://github.com/Sooryaraj-S" target="_blank">GitHub</a></li>
+                        <li><a href="https://linkedin.com/in/sooryaraj-s" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/mine._.vivid/" target="_blank">Instagram</a></li>
+                        <li><a href="https://x.com/Sooryarajdev" target="_blank">X</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sooryaraj S. All rights reserved. | Bulid with <span class="heart">❤</span> by Sooryaraj S</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
