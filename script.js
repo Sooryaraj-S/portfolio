@@ -86,8 +86,7 @@ function initScrollAnimations() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.classList.add('revealed');
                 observer.unobserve(entry.target);
             }
         });
@@ -97,9 +96,8 @@ function initScrollAnimations() {
     });
 
     revealElements.forEach((el, index) => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = `opacity 0.8s ease ${index * 0.1}s, transform 0.8s ease ${index * 0.1}s`;
+        // Set CSS variable for animation delays
+        el.style.setProperty('--i', index);
         observer.observe(el);
     });
 }

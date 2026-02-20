@@ -172,6 +172,153 @@ body {
     }
 }
 
+/* Enhanced Loader Animations */
+.loader-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    animation: fadeInScale 0.8s ease-out;
+}
+
+.bouncing-dots {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.bouncing-dots .dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    animation: bouncingDot 1.4s ease-in-out infinite;
+    box-shadow: 0 0 10px rgba(255, 23, 68, 0.6);
+}
+
+.bouncing-dots .dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.bouncing-dots .dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bouncingDot {
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-20px);
+        opacity: 0.7;
+    }
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes loaderPulse {
+    0%, 100% {
+        box-shadow: 
+            0 0 20px rgba(255, 23, 68, 0.4),
+            0 0 40px rgba(255, 23, 68, 0.2);
+    }
+    50% {
+        box-shadow: 
+            0 0 40px rgba(255, 23, 68, 0.6),
+            0 0 80px rgba(255, 23, 68, 0.4);
+    }
+}
+
+/* Fade-in with Blur Animations */
+@keyframes fadeInBlur {
+    0% {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInBlurLeft {
+    0% {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInBlurRight {
+    0% {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInBlurUp {
+    0% {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+/* Reveal Animation Trigger */
+.project-card:not(.revealed),
+.service-card:not(.revealed),
+.experience-item:not(.revealed),
+.about-card:not(.revealed),
+.stat-card:not(.revealed),
+.skill-category:not(.revealed),
+.info-card:not(.revealed),
+.contact-form:not(.revealed) {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(30px);
+}
+
+.project-card.revealed,
+.service-card.revealed,
+.experience-item.revealed,
+.about-card.revealed,
+.stat-card.revealed,
+.skill-category.revealed,
+.info-card.revealed,
+.contact-form.revealed {
+    animation: fadeInBlur 0.8s ease forwards;
+    animation-delay: calc(var(--i, 0) * 0.2s);
+}
+
 /* ============================================
    NAVIGATION
    ============================================ */
@@ -1086,9 +1233,6 @@ section {
 
 .project-card {
     overflow: hidden;
-    animation: fadeInUp 0.8s ease forwards;
-    opacity: 0;
-    animation-delay: calc(var(--i, 0) * 0.2s);
     transition: var(--transition);
 }
 
@@ -1204,9 +1348,6 @@ section {
 
 .experience-item {
     padding: 2rem;
-    animation: fadeInUp 0.8s ease forwards;
-    opacity: 0;
-    animation-delay: calc(var(--i, 0) * 0.2s);
     border-left: 3px solid var(--primary-color);
     transition: var(--transition);
     position: relative;
@@ -1285,9 +1426,6 @@ section {
 .service-card {
     padding: 2.5rem;
     text-align: center;
-    animation: fadeInUp 0.8s ease forwards;
-    opacity: 0;
-    animation-delay: calc(var(--i, 0) * 0.15s);
     transition: var(--transition);
 }
 
